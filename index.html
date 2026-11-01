@@ -2,92 +2,42 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Husky BBQ Stop</title>
-<meta name="description" content="Husky BBQ Stop menu and prices: smoked brisket, hot dogs and chicken legs.">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&amp;display=swap">
-<style>
-/* Layout: one phone-width column that reads like a roadside menu board; status first, then the board, then order tracking. */
-:root{--bg:#fff7ec;--fg:#2b1a10;--card:#fff;--ac:#b5451b;--mut:#6f5a4b;--ok:#1f8a3b;--line:rgba(90,52,23,.18);--display:"Alfa Slab One",Rockwell,"Roboto Slab",Georgia,serif;--body:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1e130c;--fg:#fbeedd;--card:#2e1f15;--ac:#ff8a4c;--mut:#c2a893;--ok:#4ade80;--line:rgba(251,238,221,.16);color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#1e130c;--fg:#fbeedd;--card:#2e1f15;--ac:#ff8a4c;--mut:#c2a893;--ok:#4ade80;--line:rgba(251,238,221,.16);color-scheme:dark}
-html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 12px)}
-@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
-[hidden]{display:none!important}
-body{margin:0 auto;background:var(--bg);color:var(--fg);font-family:var(--body);line-height:1.35;padding-block:16px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));max-width:520px}
-.brand svg{width:150px;height:auto}
-h1{margin:2px 0;font:400 32px/1.1 var(--display);color:var(--ac);text-wrap:balance}
-h2{margin:0;font:400 19px/1.2 var(--display);letter-spacing:.02em}
-.sub{color:var(--mut);margin:0 0 14px}
-.tag{text-align:center;margin:0 0 14px}
-.card{background:var(--card);border-radius:12px;padding:14px 16px;margin:12px 0;box-shadow:0 1px 3px rgba(43,26,16,.14)}
-.big{font-size:34px;font-weight:800;line-height:1.1;font-variant-numeric:tabular-nums}
-.mid{font-size:26px}
-.lbl{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--mut);margin-bottom:3px}
-.order{background:var(--ac);color:#fff;font-weight:700;text-align:center;font-size:17px}
-:root[data-theme="dark"] .order{color:#1e130c}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .order{color:#1e130c}}
-.duo{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}.duo .card{margin:0;min-width:0}
-.card.st-open{background:#f2c200;color:#222}.card.st-closed{background:#5a3417;color:#fff}
-.st-open .big,.st-closed .big{font:400 25px/1.15 var(--display)}
-.st-open .sub,.st-closed .sub{color:inherit;margin:6px 0 0}
-#note:empty{display:none}
-.info{white-space:pre-line}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 4px}
-.chip{flex:1 1 auto;text-align:center;padding:10px 12px;border:2px solid var(--ac);border-radius:8px;color:var(--ac);font-weight:700;font-size:15px;text-decoration:none}
-.chip:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--fg);outline-offset:2px}
-.cat{background:var(--card);border-radius:12px;overflow:hidden;margin:12px 0;box-shadow:0 1px 3px rgba(43,26,16,.14)}
-.ch{background:var(--cc);color:var(--ct);padding:9px 16px}
-.m{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:11px 16px;border-top:1px solid var(--line)}
-.ch+.m{border-top:0}
-.m b{font-size:17px;font-weight:650}
-.m small{display:block;color:var(--mut);font-size:14px;margin-top:1px}
-.p{font-size:17px;font-weight:800;white-space:nowrap;font-variant-numeric:tabular-nums}
-.sizes{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:12px 16px 4px;text-align:center}
-.sizes div{border:1px solid var(--line);border-radius:8px;padding:7px 4px;font-size:14px;color:var(--mut)}
-.sizes b{display:block;color:var(--fg);font-size:18px;font-variant-numeric:tabular-nums}
-.sidelist{display:grid;grid-template-columns:1fr 1fr;gap:2px 14px;list-style:none;margin:0;padding:10px 16px 14px;font-size:17px;font-weight:650}
-.sidelist li{padding:4px 0}
-.c1{--cc:#b3261e;--ct:#fff}.c2{--cc:#f2c200;--ct:#222}.c3{--cc:#e8590c;--ct:#fff}.c4{--cc:#7b4a21;--ct:#fff}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .c1{--cc:#ff6b5e;--ct:#1a0a08}:root:not([data-theme="light"]) .c2{--cc:#ffd43b;--ct:#222}:root:not([data-theme="light"]) .c3{--cc:#ff9a4d;--ct:#1a0a08}:root:not([data-theme="light"]) .c4{--cc:#c8956a;--ct:#1a0a08}}
-:root[data-theme="dark"] .c1{--cc:#ff6b5e;--ct:#1a0a08}:root[data-theme="dark"] .c2{--cc:#ffd43b;--ct:#222}:root[data-theme="dark"] .c3{--cc:#ff9a4d;--ct:#1a0a08}:root[data-theme="dark"] .c4{--cc:#c8956a;--ct:#1a0a08}
-input{width:100%;box-sizing:border-box;font-size:18px;padding:10px;border-radius:8px;border:1px solid var(--mut);background:var(--bg);color:var(--fg);margin:4px 0 8px}
-button{font-size:16px;padding:10px 16px;border:0;border-radius:8px;background:var(--ac);color:#fff;font-weight:700}
-.grid{display:flex;flex-wrap:wrap}
-button.i{background:var(--card);color:var(--fg);border:2px solid var(--cc,var(--ac));text-align:left;margin:3px;font-weight:600}
-button.on{outline:3px solid var(--fg)}
-button.x{background:transparent;color:var(--mut);padding:2px 8px}
-.rw{display:flex;justify-content:space-between;gap:8px;padding:5px 0;border-bottom:1px solid var(--line)}
-.bar{height:10px;background:#e8590c;border-radius:5px}
-.tot{font-size:24px;font-weight:800}
-.pi{width:90px!important;display:inline-block}
-#qr{background:#fff;padding:28px;display:inline-block;line-height:0;border-radius:8px}
-#qr img,#qr canvas{max-width:100%;height:auto}
-.golive{display:block;text-decoration:none}
-</style></head>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Husky BBQ Stop menu and prices: low and slow smoked brisket, hot dogs and chicken legs in Hammond, Louisiana.">
+<meta name="theme-color" content="#fbf3e4">
+<meta property="og:title" content="Husky BBQ Stop">
+<meta property="og:description" content="Low and slow barbecue in Hammond, Louisiana. Open Saturday and Sunday.">
+<meta property="og:image" content="https://huskybbqshop.com/share.jpg">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&amp;family=Nunito:wght@500;700;800&amp;display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
 <body>
-<div class="brand" style="text-align:center"><svg viewBox="0 0 200 140" width="200" role="img" aria-label="A puppy chef grilling sausages over flames" style="display:block;margin:0 auto">
-<rect x="30" y="100" width="140" height="12" rx="4" fill="#3b2a20"></rect>
-<rect x="42" y="112" width="6" height="24" fill="#3b2a20"></rect><rect x="152" y="112" width="6" height="24" fill="#3b2a20"></rect>
-<path d="M50 112c-9-10 2-17-2-28 10 5 13 13 10 19 5-4 7-10 5-17 13 9 11 21 2 26z" fill="#e8590c"></path>
-<path d="M92 112c-7-9 2-13-1-21 8 3 9 9 8 14 3-3 4-8 3-12 9 6 7 15 1 19z" fill="#f2c200"></path>
-<path d="M138 112c-9-10 2-17-2-28 10 5 13 13 10 19 5-4 7-10 5-17 13 9 11 21 2 26z" fill="#e8590c"></path>
-<rect x="56" y="91" width="34" height="11" rx="5.5" fill="#b3261e"></rect><rect x="108" y="91" width="34" height="11" rx="5.5" fill="#7b4a21"></rect>
-<ellipse cx="66" cy="58" rx="11" ry="22" fill="#7b4a21" transform="rotate(14 66 58)"></ellipse><ellipse cx="134" cy="58" rx="11" ry="22" fill="#7b4a21" transform="rotate(-14 134 58)"></ellipse>
-<ellipse cx="100" cy="58" rx="32" ry="28" fill="#d9a066"></ellipse>
-<ellipse cx="100" cy="68" rx="15" ry="11" fill="#f3d9b1"></ellipse>
-<circle cx="88" cy="55" r="5" fill="#222"></circle><circle cx="112" cy="55" r="5" fill="#222"></circle><circle cx="90" cy="53" r="1.7" fill="#fff"></circle><circle cx="114" cy="53" r="1.7" fill="#fff"></circle>
-<ellipse cx="100" cy="64" rx="6" ry="4.5" fill="#222"></ellipse>
-<path d="M93 72q7 7 14 0z" fill="#e8737a" stroke="#222" stroke-width="1.5"></path>
-<rect x="78" y="26" width="44" height="10" rx="3" fill="#fff" stroke="#d8c3a5"></rect>
-<circle cx="86" cy="22" r="10" fill="#fff" stroke="#d8c3a5"></circle><circle cx="100" cy="16" r="12" fill="#fff" stroke="#d8c3a5"></circle><circle cx="114" cy="22" r="10" fill="#fff" stroke="#d8c3a5"></circle>
-<rect x="80" y="29" width="40" height="7" fill="#fff"></rect>
-</svg><h1>Husky BBQ Stop 🐾</h1></div>
-<p class="sub tag">Woof! Smoked brisket, hot dogs &amp; chicken legs</p>
+<div class="awning" aria-hidden="true"></div>
+<header class="hero">
+<p class="bubble">Woof! Welcome, friends!</p>
+<img class="logo" src="logo.webp" width="680" height="715" alt="Husky BBQ Stop logo: a smiling dog in a cap and apron slicing brisket beside a smoker">
+<h1>Low &amp; slow barbecue for the whole family</h1>
+</header>
 
-<a class="card order golive" href="https://claude.ai/artifact/BXaqdQzdZmfjxdPt5b5Gmy">See if we're open, wait times and your order number</a>
+<main>
+<section class="card" aria-label="Hours and location">
+<div class="facts">
+<div><h3>Open</h3><p class="val">Saturday and Sunday<br>11:45 AM to 6:00 PM</p></div>
+<div><h3>Find us</h3><p class="val">1001 N Morrison Blvd<br>Hammond, LA 70401</p></div>
+</div>
+<div class="stack">
+<a class="btn main" href="https://claude.ai/artifact/BXaqdQzdZmfjxdPt5b5Gmy">See if we're open, wait times and your order number</a>
+<a class="btn plain" href="find-us.html">Directions, catering and photos</a>
+</div>
+</section>
+
 <nav class="chips" aria-label="Jump to">
-<a class="chip" href="#plates">Plates</a><a class="chip" href="#sides">Sides</a><a class="chip" href="#desserts">Desserts</a><a class="chip" href="#drinks">Drinks</a></nav>
+<a class="chip" href="#plates">Plates</a><a class="chip" href="#sides">Sides</a><a class="chip" href="#desserts">Desserts</a><a class="chip" href="#drinks">Drinks</a>
+</nav>
 
-<section id="plates" class="cat c1"><div class="ch"><h2>Plates</h2></div>
+<section id="plates" class="cat c-red"><div class="ch"><h2><span aria-hidden="true">🍖</span> Plates</h2></div>
 <div class="m"><div><b>Brisket plate</b><small>About 5 oz, plus 2 sides</small></div><span class="p">$14–16</span></div>
 <div class="m"><div><b>Brisket half-portion</b><small>About 3 oz</small></div><span class="p">$8–9</span></div>
 <div class="m"><div><b>Chicken leg plate</b><small>1 quarter, plus 2 sides</small></div><span class="p">$8–9</span></div>
@@ -96,21 +46,35 @@ button.x{background:transparent;color:var(--mut);padding:2px 8px}
 <div class="m"><div><b>Small plate</b></div><span class="p">$5–6</span></div>
 </section>
 
-<section id="sides" class="cat c2"><div class="ch"><h2>Sides</h2></div>
+<section id="sides" class="cat c-butter"><div class="ch"><h2><span aria-hidden="true">🌽</span> Sides</h2></div>
 <div class="sizes"><div>Small<b>$2.50</b></div><div>Medium<b>$3.00</b></div><div>Large<b>$5.00</b></div></div>
 <ul class="sidelist"><li>Mashed potatoes</li><li>Baked beans</li><li>Mac and cheese</li><li>Corn bread</li></ul>
 </section>
 
-<section id="desserts" class="cat c3"><div class="ch"><h2>Desserts</h2></div>
+<section id="desserts" class="cat c-caramel"><div class="ch"><h2><span aria-hidden="true">🍑</span> Desserts</h2></div>
 <div class="m"><div><b>Bread pudding</b></div><span class="p">$3</span></div>
 <div class="m"><div><b>Peach cobbler</b></div><span class="p">$3</span></div>
 </section>
 
-<section id="drinks" class="cat c4"><div class="ch"><h2>Drinks</h2></div>
+<section id="drinks" class="cat c-sky"><div class="ch"><h2><span aria-hidden="true">🥤</span> Drinks</h2></div>
 <div class="m"><div><b>Sweet tea</b></div><span class="p">$2</span></div>
 <div class="m"><div><b>Lemonade</b></div><span class="p">$2</span></div>
 <div class="m"><div><b>Soda</b></div><span class="p">$1.50</span></div>
 <div class="m"><div><b>Water</b></div><span class="p">$1</span></div>
 </section>
 
+<div class="trail" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+
+<section class="card invite">
+<h2>Feeding a crowd?</h2>
+<p>Ask us about catering your next get-together.</p>
+<a class="btn" href="find-us.html#catering">See catering</a>
+</section>
+</main>
+
+<footer class="foot"><div class="foot-in">
+<strong>Thanks for stopping by!</strong>
+<p>1001 N Morrison Blvd, Hammond, LA 70401</p>
+<p><a href="tel:+15043161914">504-316-1914</a> · <a href="mailto:huskybbqstop@gmail.com">huskybbqstop@gmail.com</a></p>
+</div></footer>
 </body></html>

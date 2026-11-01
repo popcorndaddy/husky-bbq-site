@@ -1,0 +1,94 @@
+/* A cheerful food-stand look: striped awning, faint paw prints, round letters and soft colors picked from the logo. One light look on every phone, so the logo always sits on cream. */
+:root{--bg:#fff6e6;--glow:#ffe0a3;--fg:#3a2416;--card:#fffdf8;--red:#b9342a;--red-dark:#8f2219;--on-red:#fff;--stripe:#fffaf0;--caramel:#8a5a2f;--on-caramel:#fff;--butter:#ffd66b;--butter-soft:#fff0c9;--on-butter:#3a2416;--sky:#bfe6ee;--on-sky:#3a2416;--pink:#ffd9d2;--foot:#5a3418;--on-foot:#fff3df;--mut:#6d5442;--line:rgba(138,90,47,.2);--shadow:0 4px 14px rgba(120,76,36,.14);--display:"Fredoka","Baloo 2","Trebuchet MS",system-ui,sans-serif;--body:"Nunito",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--paw:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cellipse cx='12' cy='16.5' rx='6' ry='5'/%3E%3Cellipse cx='4.6' cy='10.5' rx='2.3' ry='3.1'/%3E%3Cellipse cx='9.4' cy='6' rx='2.3' ry='3.2'/%3E%3Cellipse cx='14.6' cy='6' rx='2.3' ry='3.2'/%3E%3Cellipse cx='19.4' cy='10.5' rx='2.3' ry='3.1'/%3E%3C/svg%3E");color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:12px}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background-color:var(--bg);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150' fill='%23c98a4b' fill-opacity='.11'%3E%3Cg transform='translate(18 20) rotate(-18)'%3E%3Cellipse cx='12' cy='16.5' rx='6' ry='5'/%3E%3Cellipse cx='4.6' cy='10.5' rx='2.3' ry='3.1'/%3E%3Cellipse cx='9.4' cy='6' rx='2.3' ry='3.2'/%3E%3Cellipse cx='14.6' cy='6' rx='2.3' ry='3.2'/%3E%3Cellipse cx='19.4' cy='10.5' rx='2.3' ry='3.1'/%3E%3C/g%3E%3Cg transform='translate(95 92) rotate(20)'%3E%3Cellipse cx='12' cy='16.5' rx='6' ry='5'/%3E%3Cellipse cx='4.6' cy='10.5' rx='2.3' ry='3.1'/%3E%3Cellipse cx='9.4' cy='6' rx='2.3' ry='3.2'/%3E%3Cellipse cx='14.6' cy='6' rx='2.3' ry='3.2'/%3E%3Cellipse cx='19.4' cy='10.5' rx='2.3' ry='3.1'/%3E%3C/g%3E%3C/svg%3E");color:var(--fg);font:500 17px/1.45 var(--body)}
+main,.foot-in{max-width:580px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+main{display:grid;gap:16px;padding-block:0 28px}
+main>*{min-width:0}
+p,ul,figure{margin:0}
+a:focus-visible{outline:3px solid var(--fg);outline-offset:2px}
+img{max-width:100%}
+
+/* Striped awning across the top, like the front of a food stand */
+.awning{position:relative;z-index:1;height:26px;background:repeating-linear-gradient(90deg,var(--red) 0 36px,var(--stripe) 36px 72px);filter:drop-shadow(0 3px 3px rgba(120,76,36,.25))}
+.awning::after{content:"";position:absolute;left:0;right:0;top:100%;height:18px;background:radial-gradient(circle at 18px 0,var(--red) 17.5px,transparent 18px) 0 0/72px 18px repeat-x,radial-gradient(circle at 54px 0,var(--stripe) 17.5px,transparent 18px) 0 0/72px 18px repeat-x}
+
+/* Top of the page: the dog says hello from a warm glow */
+.hero{background:radial-gradient(circle at 50% 50%,var(--glow) 0,transparent 68%);text-align:center;padding:30px 16px 16px}
+.bubble{display:inline-block;position:relative;background:var(--card);color:var(--red);border:3px solid var(--red);border-radius:22px;padding:5px 16px;margin:0 0 14px;font:600 18px/1.25 var(--display);transform:rotate(-2deg)}
+.bubble::after{content:"";position:absolute;left:50%;bottom:-10px;width:16px;height:16px;margin-left:-8px;background:var(--card);border-right:3px solid var(--red);border-bottom:3px solid var(--red);transform:rotate(45deg);border-bottom-right-radius:4px}
+.logo{display:block;width:min(80vw,350px);height:auto;margin:0 auto;filter:drop-shadow(0 6px 10px rgba(120,76,36,.28))}
+.hero.small .logo{width:min(44vw,165px)}
+@media(prefers-reduced-motion:no-preference){.logo{animation:bob 4s ease-in-out infinite;transform-origin:50% 90%}}
+@keyframes bob{0%,100%{transform:rotate(-1.2deg)}50%{transform:rotate(1.2deg) translateY(-4px)}}
+h1{margin:14px auto 0;max-width:20em;font:700 clamp(27px,7.5vw,34px)/1.15 var(--display);color:var(--red);text-wrap:balance}
+h2{margin:0;font:600 23px/1.2 var(--display);text-wrap:balance}
+h3{margin:0 0 2px;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:var(--mut)}
+
+/* Buttons */
+.btn{display:block;text-align:center;padding:13px 16px;border-radius:999px;font-weight:800;text-decoration:none;line-height:1.25}
+.btn:active,.chip:active{transform:translateY(2px)}
+.btn.main{background:var(--red);color:var(--on-red);box-shadow:0 4px 0 var(--red-dark)}
+.btn.plain{background:var(--card);color:var(--red);border:3px solid var(--red)}
+.stack{display:grid;gap:12px}
+
+/* Hours and place, side by side when they fit */
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.val{font-size:18px;font-weight:800;line-height:1.3}
+
+/* Cards */
+.card{background:var(--card);border-radius:26px;padding:18px;box-shadow:var(--shadow);display:grid;gap:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{flex:1 1 auto;text-align:center;padding:9px 10px;border-radius:999px;color:var(--fg);font-weight:800;font-size:15px;text-decoration:none;white-space:nowrap}
+.chip:nth-child(1){background:var(--pink)}
+.chip:nth-child(2){background:var(--butter)}
+.chip:nth-child(3){background:#f0d2ad}
+.chip:nth-child(4){background:var(--sky)}
+
+/* Menu sections: a soft colored header with a little food picture */
+.cat{background:var(--card);border-radius:26px;overflow:hidden;box-shadow:var(--shadow)}
+.ch{background:var(--cc);color:var(--ct);padding:11px 18px}
+.head{display:flex;align-items:center;gap:9px;color:var(--red)}
+.head::before{content:"";flex:none;width:24px;height:24px;background:currentColor;-webkit-mask:var(--paw) center/contain no-repeat;mask:var(--paw) center/contain no-repeat}
+.c-red{--cc:var(--red);--ct:var(--on-red)}
+.c-butter{--cc:var(--butter);--ct:var(--on-butter)}
+.c-caramel{--cc:var(--caramel);--ct:var(--on-caramel)}
+.c-sky{--cc:var(--sky);--ct:var(--on-sky)}
+.m{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:12px 18px;border-top:2px dotted var(--line)}
+.ch+.m{border-top:0}
+.m b{font-size:18px;font-weight:800}
+.m small{display:block;color:var(--mut);font-size:15px;margin-top:1px}
+.p{flex:none;background:var(--butter-soft);color:var(--red-dark);border-radius:999px;padding:3px 11px;font-size:17px;font-weight:800;white-space:nowrap;font-variant-numeric:tabular-nums}
+.sizes{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:14px 18px 4px;text-align:center}
+.sizes div{background:var(--butter-soft);border-radius:18px;padding:8px 4px;font-size:15px;color:var(--mut)}
+.sizes b{display:block;color:var(--red-dark);font-size:19px;font-weight:800;font-variant-numeric:tabular-nums}
+.sidelist{display:grid;grid-template-columns:1fr 1fr;gap:2px 14px;list-style:none;padding:10px 18px 14px;font-size:17px;font-weight:700}
+.sidelist li{padding:4px 0}
+
+/* A little trail of paw prints between parts of the page */
+.trail{display:flex;justify-content:center;gap:14px;color:var(--red)}
+.trail i{width:20px;height:20px;background:currentColor;opacity:.75;-webkit-mask:var(--paw) center/contain no-repeat;mask:var(--paw) center/contain no-repeat}
+.trail i:nth-child(odd){transform:rotate(-16deg) translateY(4px)}
+.trail i:nth-child(even){transform:rotate(16deg) translateY(-4px)}
+
+/* Catering invitation */
+.invite{background:var(--butter);color:var(--on-butter)}
+.invite .btn{background:var(--red);color:var(--on-red);box-shadow:0 4px 0 var(--red-dark)}
+.invite h2{font-size:26px}
+
+/* Catering details and photo */
+.serve{list-style:none;padding:0;display:grid;gap:10px}
+.serve li{border-top:2px dotted var(--line);padding-top:10px}
+.serve li:first-child{border-top:0;padding-top:0}
+.contact{overflow-wrap:anywhere}
+.contact a{color:var(--red)}
+.pic{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:18px}
+figcaption{font-size:15px;font-weight:800;margin-top:6px}
+
+/* Bottom of the page */
+.foot{background:var(--foot);color:var(--on-foot);padding-block:22px;text-align:center;font-size:15px}
+.foot-in{display:grid;gap:6px}
+.foot strong{font:600 21px/1.2 var(--display)}
+.foot a{color:var(--butter);overflow-wrap:anywhere}
