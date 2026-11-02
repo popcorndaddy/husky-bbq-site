@@ -30,7 +30,7 @@ h3{margin:0 0 2px;font-size:13px;font-weight:800;text-transform:uppercase;letter
 /* The family welcome */
 .card.welcome{background:var(--pink);text-align:center;justify-items:center;gap:6px}
 .welcome h2{color:var(--red-dark);font-size:25px}
-.welcome .fam{display:block;width:min(78vw,320px);max-width:100%;height:auto;margin-top:6px}
+.welcome .fam{display:block;width:min(60vw,220px);max-width:100%;height:auto;margin-top:8px;color:var(--red-dark)}
 
 /* Buttons */
 .btn{display:block;text-align:center;padding:13px 16px;border-radius:999px;font-weight:800;text-decoration:none;line-height:1.25}
@@ -57,7 +57,7 @@ h3{margin:0 0 2px;font-size:13px;font-weight:800;text-transform:uppercase;letter
 .ch{background:var(--cc);color:var(--ct);padding:11px 18px}
 .head{display:flex;align-items:center;gap:9px;color:var(--red)}
 .head::before{content:"";flex:none;width:24px;height:24px;background:currentColor;-webkit-mask:var(--paw) center/contain no-repeat;mask:var(--paw) center/contain no-repeat}
-.art{flex:none;width:44px;height:44px;padding:3px;background:var(--card);border-radius:50%;box-shadow:0 2px 0 rgba(58,36,22,.18)}
+.art{flex:none;width:42px;height:42px;padding:5px;background:var(--card);border-radius:50%}
 .ch h2{display:flex;align-items:center;gap:10px}
 .c-red{--cc:var(--red);--ct:var(--on-red)}
 .c-butter{--cc:var(--butter);--ct:var(--on-butter)}
