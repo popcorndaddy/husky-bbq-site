@@ -1,0 +1,14 @@
+{
+ "version": "0.27.0 c5ad903 20261104-0229",
+ "zip": "game-0.27.0-20261104-0229.zip",
+ "size": 45928445,
+ "sha256": "9448a5b54809de5d59496149653368bd57324bcf9bf091f010d4a1dd3507d60a",
+ "notes": "The endgame: 13 Kingdom Trials, the Mushroom Kingdom, Amanita's fight and your crowning",
+ "date": "2026-11-04T02:29:55Z",
+ "launcher": {
+  "version": 2,
+  "file": "Launcher.exe",
+  "size": 18944,
+  "sha256": "3d3a55442453b5a9c74040169651cfec971a64193864d8e235e6fe974f8cf72a"
+ }
+}

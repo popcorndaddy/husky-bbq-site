@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cutesy Knights</title>
+<style>
+ body{margin:0;font-family:system-ui,Segoe UI,sans-serif;background:#fff6ec;color:#4a3426;display:flex;min-height:100vh;align-items:center;justify-content:center}
+ main{max-width:520px;padding:32px 16px;text-align:center}
+ h1{font-size:2.4rem;margin:0 0 8px}
+ p{line-height:1.5}
+ a.btn{display:inline-block;margin:16px 0;padding:14px 28px;border-radius:999px;background:#e0646f;color:#fff;font-weight:700;text-decoration:none;font-size:1.1rem}
+ a.btn:hover{background:#c94f5a}
+ small{color:#8a6d5b}
+</style></head><body><main>
+<h1>Cutesy Knights</h1>
+<p>A mushroom knight, ten bug-ruled lands and 84 bug bosses.</p>
+<a class="btn" href="Launcher.exe">Download for Windows</a>
+<p><small>Newest version: <b id="v">0.27.0 c5ad903 20261104-0229</b><br><span id="n">The endgame: 13 Kingdom Trials, the Mushroom Kingdom, Amanita's fight and your crowning</span></small></p>
+<p><small>Run the launcher once; it installs the game and keeps it up to date every time you play.<br>
+Windows may say it protected your PC: click <b>More info</b>, then <b>Run anyway</b>.</small></p>
+</main>
+<script>
+fetch('latest.json',{cache:'no-store'}).then(r=>r.json()).then(m=>{document.getElementById('v').textContent=m.version;document.getElementById('n').textContent=m.notes||''}).catch(()=>{});
+</script>
+</body></html>
