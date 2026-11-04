@@ -1,10 +1,10 @@
 {
- "version": "0.27.1 f5d07a9 20261104-0334",
- "zip": "game-0.27.1-20261104-0334.zip",
- "size": 45928185,
- "sha256": "e370e22063c0b1901a8e2ec5b5df713d670787db797324c6b2f1b021947d8ee7",
- "notes": "No more spike fences around bug camps",
- "date": "2026-11-04T03:34:43Z",
+ "version": "0.27.3 667e73b 20261104-0343",
+ "zip": "game-0.27.3-20261104-0343.zip",
+ "size": 45928397,
+ "sha256": "176076ae8ff65498b38532f5ee4c11d81208f9cf302cc1236c0cc9ddfbc8494f",
+ "notes": "Boss fights: the camera sees through the fog wall, and bosses can no longer shove you out of the arena",
+ "date": "2026-11-04T03:43:40Z",
  "launcher": {
   "version": 2,
   "file": "Launcher.exe",
