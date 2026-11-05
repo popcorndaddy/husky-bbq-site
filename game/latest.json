@@ -1,10 +1,10 @@
 {
- "version": "0.29.1 944163e 20261105-0137",
- "zip": "game-0.29.1-20261105-0137.zip",
- "size": 45961721,
- "sha256": "6e7e74517c586fbc37f5321bfcd1f19d3a0e4f1a162d5f5a76cea82fd930dba5",
- "notes": "The world loads in about 8 seconds instead of a minute and streams in around you; new equipment screen with item icons; two handed weapons hold steady",
- "date": "2026-11-05T01:37:29Z",
+ "version": "0.30.0 7f7b81a 20261105-0343",
+ "zip": "game-0.30.0-20261105-0343.zip",
+ "size": 45971222,
+ "sha256": "9ddde8a0c7e85aec40e5468c0b2c5c33f14bbba18b29b1c422110d53a1172fa9",
+ "notes": "Capes flow like real cloth, text is sharp and never cut off, and the play screen is clean with every control in the pause menu",
+ "date": "2026-11-05T03:43:24Z",
  "launcher": {
   "version": 2,
   "file": "Launcher.exe",
