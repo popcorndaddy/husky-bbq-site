@@ -1,10 +1,10 @@
 {
- "version": "0.27.3 667e73b 20261104-0343",
- "zip": "game-0.27.3-20261104-0343.zip",
- "size": 45928397,
- "sha256": "176076ae8ff65498b38532f5ee4c11d81208f9cf302cc1236c0cc9ddfbc8494f",
- "notes": "Boss fights: the camera sees through the fog wall, and bosses can no longer shove you out of the arena",
- "date": "2026-11-04T03:43:40Z",
+ "version": "0.29.1 944163e 20261105-0137",
+ "zip": "game-0.29.1-20261105-0137.zip",
+ "size": 45961721,
+ "sha256": "6e7e74517c586fbc37f5321bfcd1f19d3a0e4f1a162d5f5a76cea82fd930dba5",
+ "notes": "The world loads in about 8 seconds instead of a minute and streams in around you; new equipment screen with item icons; two handed weapons hold steady",
+ "date": "2026-11-05T01:37:29Z",
  "launcher": {
   "version": 2,
   "file": "Launcher.exe",
