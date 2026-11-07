@@ -1,10 +1,10 @@
 {
- "version": "0.31.0 9dc9f2c 20261107-1814",
- "zip": "game-0.31.0-20261107-1814.zip",
- "size": 45972474,
- "sha256": "4f023fd33eb3a49270aa8969dddb257034286aa4ee9e6a2adba3a2b6afb7a5d1",
- "notes": "Bosses can always be killed, blocking is simple, dodging is better, props are solid, and join codes show",
- "date": "2026-11-07T18:14:37Z",
+ "version": "0.32.0 d35e1fb 20261107-2109",
+ "zip": "game-0.32.0-20261107-2109.zip",
+ "size": 45972494,
+ "sha256": "cb629b0cbc2a3df759a8a95a31df61c77e2091f0c9ce84e16310857db709984d",
+ "notes": "Boss arenas are open: no walls, run anywhere, and a boss chases you or gives up and goes home",
+ "date": "2026-11-07T21:09:56Z",
  "launcher": {
   "version": 2,
   "file": "Launcher.exe",
