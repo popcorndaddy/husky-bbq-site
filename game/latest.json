@@ -1,10 +1,10 @@
 {
- "version": "0.32.0 d35e1fb 20261107-2109",
- "zip": "game-0.32.0-20261107-2109.zip",
- "size": 45972494,
- "sha256": "cb629b0cbc2a3df759a8a95a31df61c77e2091f0c9ce84e16310857db709984d",
- "notes": "Boss arenas are open: no walls, run anywhere, and a boss chases you or gives up and goes home",
- "date": "2026-11-07T21:09:56Z",
+ "version": "0.32.0 5a2aee1 20261108-0116",
+ "zip": "game-0.32.0-20261108-0116.zip",
+ "size": 56428350,
+ "sha256": "067dd03d14f92252f56de7d84296ef591b927faff0780c48d3509a155087d6e8",
+ "notes": "Every boss is now a hand made model with its own fighting moves: stingers, scythes, tails, pincers, wing claps, paw swats, a pill bug that rolls into a ball and worms that rear and slither",
+ "date": "2026-11-08T01:16:45Z",
  "launcher": {
   "version": 2,
   "file": "Launcher.exe",
