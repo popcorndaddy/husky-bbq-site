@@ -1,10 +1,10 @@
 {
- "version": "0.34.0 e26a34c 20261108-0251",
- "zip": "game-0.34.0-20261108-0251.zip",
- "size": 56433177,
- "sha256": "e37007c8e55808594c4a58bea1108caf408c6ee9bde892bce523ab73efe0560c",
- "notes": "Everything in the world is solid now: you can no longer walk through trees, rocks, props or buildings, and bugs stay out of tents and trees",
- "date": "2026-11-08T02:51:53Z",
+ "version": "0.37.0 bea1169 20261108-2315",
+ "zip": "game-0.37.0-20261108-2315.zip",
+ "size": 68231779,
+ "sha256": "0f7094d00a691cbb34994b49c8640a28efb00f2138dd24364462a507546674e5",
+ "notes": "Anime fighting moves in every style, blade clashes when you and a bug strike together, higher jumps, longer rolls, and join codes that work from every PC in the house",
+ "date": "2026-11-08T23:15:02Z",
  "launcher": {
   "version": 2,
   "file": "Launcher.exe",
