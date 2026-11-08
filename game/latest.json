@@ -1,10 +1,10 @@
 {
- "version": "0.33.0 0b6e5ab 20261108-0117",
- "zip": "game-0.33.0-20261108-0117.zip",
- "size": 56428350,
- "sha256": "7ac461e51c4784cb81e684f6d03e54e7d1a4f11facf59214e3796724539cb0fb",
- "notes": "Every boss is now a hand made model with its own fighting moves: stingers, scythes, tails, pincers, wing claps, paw swats, a pill bug that rolls into a ball and worms that rear and slither",
- "date": "2026-11-08T01:17:32Z",
+ "version": "0.34.0 e26a34c 20261108-0251",
+ "zip": "game-0.34.0-20261108-0251.zip",
+ "size": 56433177,
+ "sha256": "e37007c8e55808594c4a58bea1108caf408c6ee9bde892bce523ab73efe0560c",
+ "notes": "Everything in the world is solid now: you can no longer walk through trees, rocks, props or buildings, and bugs stay out of tents and trees",
+ "date": "2026-11-08T02:51:53Z",
  "launcher": {
   "version": 2,
   "file": "Launcher.exe",
