@@ -82,5 +82,12 @@
   "size": 68477592,
   "sha256": "b912ad948500bb7b8e4d136eb8054d932b059f1fb902091fa6f41b34d5800a4c",
   "date": "2026-11-09T04:39:46Z"
+ },
+ "game-0.38.1-20261110-0035.zip": {
+  "version": "0.38.1 fcc60eb 20261110-0035",
+  "zip": "https://github.com/popcorndaddy/husky-bbq-site/releases/download/game-0.38.1-20261110-0035/game-0.38.1-20261110-0035.zip",
+  "size": 118245183,
+  "sha256": "b189378e732257a53c76606896abacbeee97e4de5c27a9dc6dbb59db196df19c",
+  "date": "2026-11-10T00:35:42Z"
  }
 }
